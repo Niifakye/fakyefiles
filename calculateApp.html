@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Simple Calculator App</title>
+     <link rel="stylesheet" href="calculateApp.css">
+</head>
+<body>
+     <div class="parent">
+          
+          <div  class="child">
+               <input type="number" id="input1" />
+               <input type="number" id="input2" />     
+          </div>
+          
+          <div class="child1">
+               <button  class="opr" onclick="calculate()">+</button>
+               <button  class="opr" onclick="calculate()">-</button>
+               <button  class="opr" onclick="calculate()">*</button>
+               <button  class="opr" onclick="calculate()">/</button>
+               <button  class="opr" onclick="calculate()">%</button>
+          </div>
+
+          <p id="result"></p>
+
+     </div>
+
+     <script src="calculateApp.js"></script>
+</body>
+</html>
