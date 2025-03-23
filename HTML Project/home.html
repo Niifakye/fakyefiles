@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="images/ico" href="./images/favicon.ico" />
+    <title>MyRoadShow</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+
+    <!-- <img src="./images/pageIcon.svg" alt=""/> -->
+    <h1>Welcome to My Road  Show</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#Upcoming-events-container">Events</a>
+            <a href="#celebrities-container">Celebrities</a>
+            <a href="#vote-container">Vote</a>
+            <a href="#ticket-container">Book Tickets</a>
+            <a href="#contactUs-container">Contact Us</a>
+            <a href="#aboutUs-container">About Us</a>
+        </nav>
+</header>
+
+<section id="home">
+    <h3>Leading Entertainment and <br> Event Management <br> Company.</h3>
+    
+    <p>Vote for your favorite celebrity <br> Book tickets now! </p>
+    <button><a href="#celebrities-container"></a> Vote Here</button>
+    <button><a href="#vote-container"></a>Book Tickets Now</button>
+</section><br><br>
+
+    <hr>
+    
+
+<!-- events page -->
+<h1 id="eventHeader">EVENTS</h1>
+
+<section id="Upcoming-events-container">
+    <h2>Upcoming Events</h2>
+    <div class="event">
+        <h3>Music Concert - GoodPlay Stadium</h3>
+        <p><strong>Date:</strong> March 30, 2025</p>
+        <p><strong>Venue:</strong> GoodPlay Stadium, California</p>
+        <p>Join us for an electrifying night featuring the top artists from the music industry. Vote for your favorite celebrity to perform live!</p>
+    </div>
+
+    <div class="event">
+        <h3>Rock Night Festival</h3>
+        <p><strong>Date:</strong> April 22, 2025</p>
+        <p><strong>Venue:</strong> Madison Square Garden, NY</p>
+        <p>Experience the thrill of live rock music with top rock bands and artists in a grand celebration.</p>
+    </div>
+</section>
+
+<section id="past-events-container">
+    <h2 class="past-events">Past Events</h2>
+    <div class="event past">
+        <h3>Summer Music Blast</h3>
+        <p><strong>Date:</strong> August 10, 2024</p>
+        <p><strong>Venue:</strong> Hollywood Bowl, LA</p>
+        <p>A night to remember featuring the best pop, rock, and jazz artists of the decade.</p>
+    </div>
+
+    <div class="event past">
+        <h3>New Year's Eve Party</h3>
+        <p><strong>Date:</strong> December 31, 2024</p>
+        <p><strong>Venue:</strong> Times Square, NY</p>
+        <p>A spectacular way to ring in the new year with lights, fireworks, and top DJs spinning the night away.</p>
+    </div>
+</section> <br><br><br>
+
+<hr>
+
+
+
+
+<!-- celebreties page -->
+<section id="celebrities-container">
+    <h1>Meet Your Favorite Celebrity</h1>
+
+    <div class="celebrity">
+        <img src="images/GR.jpg" alt="Garry Richards">
+        <h3>Garry Richards</h3>
+        <p>The ultimate rockstar, known for electrifying performances and chart-topping hits.</p>
+    </div>
+
+    <div class="celebrity">
+        <img src="images/EA.jpg" alt="Elton Adams">
+        <h3>Elton Adams</h3>
+        <p>A pop sensation with a voice that has captivated millions around the world.</p>
+    </div>
+
+    <div class="celebrity">
+        <img src="images/GA.jpg" alt="Gloria Aniston">
+        <h3>Gloria Aniston</h3>
+        <p>The pop diva whose powerful vocals and stunning stage presence steal the show.</p>
+    </div>
+
+    <div class="celebrity">
+        <img src="images/band.jpg" alt="The Band of Guys">
+        <h3>The Band of Guys</h3>
+        <p>A famous pop band that delivers unforgettable live performances and hit songs.</p>
+    </div>
+</section>
+
+
+<hr>
+
+
+    <!-- vote page -->
+<section id="vote-container">
+    <h1>Vote for Your Favorite Celebrity</h1>
+
+    <form id="voteForm">
+        <label>Select your favorite celebrity</label><br>
+        <div class="names">
+            <input type="radio" name="celebrity" value="Garry Richards"> Garry Richards  <br>
+            <input type="radio" name="celebrity" value="Elton Adams"> Elton Adams  <br> 
+            <input type="radio" name="celebrity" value="Gloria Aniston"> Gloria Aniston  <br>
+            <input type="radio" name="celebrity" value="The Band of Guys"> The Band of Guys   <br>
+        </div>
+        <button type="submit">Vote</button>
+    </form>
+</section>
+
+
+<hr>
+
+
+
+    <!-- tickets page -->
+<section id="ticket-container">
+    <h1>Book Your Tickets</h1>
+    <form id="ticketForm">
+        <div class="ticket-details">
+        <label>Name:</label>
+        <input type="text" id="name" placeholder=" enter your full name"><br>
+
+        <label>Email:</label>
+        <input type="email" id="email" placeholder="enter a valid email" required><br>
+
+        <label>Number of Tickets:</label>
+        <input type="number" id="tickets" placeholder="enter number of tickets" required><br>
+
+        <label>Payment Method:</label>
+        <select id="payment">
+            <option value="cash">Cash</option>
+            <option value="card">Card</option>
+        </select><br>
+        </div>
+        
+        <button type="submit">Book Now</button> 
+    </form>
+</section>
+
+
+<hr>
+
+
+    <!-- contactUs page -->
+<section id="contactUs-container">
+    <h1>Get in Touch</h1>
+        <form id="contactForm">
+            <div class="contact-details">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+</section>
+
+
+<hr>
+
+
+
+<!-- aboutUs Page -->
+<section id="aboutUs-container">
+    <h1>About Us</h1>
+    <div class="about-content">
+        <label>Our Vision</label>
+        <p>
+            MyRoadShow is a leading entertainment and event management company in the US. 
+            We specialize in organizing world-class concerts, corporate events, and television shows.
+            With cutting-edge laser and lighting technologies, we bring the best experiences to our audiences.
+        </p>
+
+        <label>Our Achievements</label>
+        <ul>
+            <li>Successfully organized over 100 major concerts across the country.</li>
+            <li>Partnered with top celebrity artists and entertainment companies.</li>
+            <li>Ranked among the best event management companies in the industry.</li>
+            <li>Delivered unforgettable experiences to over 1 million event attendees.</li>
+        </ul>
+
+        <label>Why Choose Us?</label>
+        <p>
+            Our passion for entertainment and innovation drives us to create unique events that leave lasting impressions.
+            From booking top artists to organizing seamless events, we ensure excellence at every step.
+        </p>
+    </div>
+</section>
+
+
+
+
+<footer>
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong> support@myroadshow.com</p>
+        <p><strong>Phone:</strong> +233 0203 860 825</p>
+        <p><strong>Address:</strong> 123 GoodPlay Stadium, California, USA</p>
+        <br><br>
+        <span>&copy; 2025 MyRoadShow. All rights reserved.</span>
+</footer>
+
+    <script src="home.js"></script>
+</body>
+</html>

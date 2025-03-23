@@ -1,0 +1,588 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Sans";
+  font-weight: 200;
+  background: linear-gradient(to right, #8197E5, #557f9f);
+  text-align: center;
+  color: #f1ecec;
+  scroll-padding-top: 170px;
+}
+  
+
+header {
+  height: 150px;
+  color: #f1ecec;
+  font-size: 15px;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  background-color: #240f54e7;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 40px;
+  font-family: "Chelsea Market";
+  margin: 10px;
+  padding: 20px;
+}
+
+nav {
+  margin: 10px 0 5px 0;
+}
+
+
+nav a {
+  color: #f1ecec;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 15px;
+  transition: 0.3s ease-in;
+
+}
+
+nav a:hover {
+  background-color: transparent;
+  border: 3px dashed #f7e7a7;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+#home {
+  margin: 90px 0 50px 0;
+  padding: 20px;
+  font-size: 50px;
+  background-color: #8197E5;
+  border-radius: 150px;
+}
+
+
+#home P{
+ font-size: 18px;
+ margin-top: 50px;
+}
+
+#home button{
+  width: 10%;
+  padding: 10px;
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+#home button:hover{
+  background-color: #c70039;
+}
+
+
+
+
+/* events page styles */
+#eventHeader {
+  font-family: "Chelsea Market";
+  font-size: 50px;
+  margin: 20px 0;
+  color: #f1ecec;
+  text-align: center;
+}
+
+#Upcoming-events-container {
+ display: flex;
+ flex-direction: column;
+ align-items: end;
+ margin-top: 50px;
+}
+
+#Upcoming-events-container h2 {
+ font-family: "Chelsea Market";
+ color: #f0eeed;
+ font-size: 30px;
+ padding-bottom: 5px;
+ margin-bottom: 5px;
+ width: 60%;
+ text-align: center;
+}
+
+#past-events-container {
+ display: flex;
+ flex-direction: column;
+ align-items: start;
+ margin-top: 50px;
+}
+
+#past-events-container h2 {
+ font-family: "Chelsea Market";
+ color: #f0eeed;
+ font-size: 30px;
+ padding-bottom: 5px;
+ margin-bottom: 5px;
+ width: 60%;
+ text-align: center;
+}
+
+.event {
+ background: #fffbfb;
+ padding: 20px;
+ margin: 15px;
+ width: 60%;
+ border-radius: 10px;
+ box-shadow: 0 4px 12px #0000004d;
+ text-align: center;
+}
+
+.past {
+  background: #fdefb8;
+ }
+
+.event h3 {
+ color: #ff5733;
+ padding-bottom: 5px;
+}
+
+.event p {
+ font-size: 18px;
+ line-height: 2.0;
+ color: #333;
+}
+
+
+
+
+
+
+/* Celebrities Page Styling */
+#celebrities-container {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 30px;
+ text-align: center;
+}
+
+#celebrities-container h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-family: "Chelsea Market";
+  color: #f1ecec;
+}
+
+.celebrity {
+ background: #f1ecec;
+ padding: 20px;
+ margin: 15px;
+ width: 70%;
+ border-radius: 10px;
+ box-shadow: 4px 6px 12px #00000060;
+ text-align: center;
+}
+
+.celebrity img {
+ width: 200px;
+ height: 200px;
+ border-radius: 50%;
+ object-fit:fill;
+ margin-bottom: 10px;
+ transition: transform 0.3s ease-in-out;
+}
+
+.celebrity img:hover {
+ transform: scale(1.1);
+}
+
+.celebrity h3 {
+ color: #ff5733;
+ font-size: 22px;
+ margin: 10px;
+}
+
+.celebrity p {
+ font-size: 20px;
+ line-height: 1.6;
+ color: #333;
+}
+
+
+
+
+
+/* vote page styles */
+#vote-container {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 30px;
+}
+
+#vote-container h1 {
+  font-size: 40px;
+  margin-bottom: 50px;
+  font-family: "Chelsea Market";
+  color: #f1ecec;
+  text-align: center;   
+ }
+
+#voteForm{
+  background-color: #f8f7f7;
+  width: 40%;
+  padding: 30px;
+  margin-bottom: 50px;
+  color: #333;
+  text-align: start;
+  border-radius: 10px;
+  box-shadow: 4px 6px 12px #00000060;
+}
+
+
+#voteForm label {
+ font-size: 20px;
+ color: #ff6b6b;
+ text-align: left;
+}
+
+.names{
+  padding: 20px;
+  margin: 10px;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+#voteForm input[type="radio"] {
+ width: 20px;
+ height: 13px;
+ margin-left: 30px;
+ transform: scale(1.2);
+ border-radius: 50%;
+  cursor: pointer;
+}
+
+#voteForm input[type="radio"]:hover {
+ transform: scale(1.2);
+}
+
+#voteForm button{
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+#voteForm button:hover {
+ background: #c70039;
+}
+
+
+
+
+
+
+/* Ticket Booking Form */
+#ticket-container {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 30px;
+}
+
+
+#ticket-container h1 {
+  color: #f1ecec;
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-family: "Chelsea Market";
+}
+
+
+#ticketForm {
+  background-color: #f8f7f7;
+  width: 50%;
+  padding: 30px;
+  margin-bottom: 50px;
+  color: #333;
+  text-align: start;
+  border-radius: 10px;
+  box-shadow: 4px 6px 12px #00000060;
+}
+
+#ticketForm label {
+  font-size: 20px;
+  color: #ff6b6b;
+  text-align: left;
+}
+
+.ticket-details {
+  padding: 10px;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+#ticketForm 
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+ width: 95%;
+ padding: 10px;
+ margin-bottom: 15px;
+ border: 2px solid #dddddd;
+ border-radius: 5px;
+ font-size: 16px;
+}
+
+#ticketForm
+input:focus,
+select:focus {
+border-color: #ffc5ad;
+outline: none;
+}
+
+#ticketForm button {
+ width: 95%;
+ padding: 10px;
+ background-color: #ff5733;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ font-size: 20px;
+ cursor: pointer;
+ transition: background 0.3s ease-in-out;
+}
+
+#ticketForm button:hover {
+ background: #c70039;
+}
+
+
+
+
+/* Contact Page Styling */
+#contactUs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+#contactUs-container h1{
+  font-family: "Chelsea Market";
+  color: #f1ecec;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+#contactForm {
+  background-color: #f8f7f7;
+  width: 50%;
+  padding: 30px;
+  margin-bottom: 50px;
+  color: #333;
+  text-align: start;
+  border-radius: 10px;
+  box-shadow: 4px 6px 12px #00000060;
+}
+
+#contactForm label {
+  font-size: 20px;
+  color: #ff6b6b;
+  text-align: left;
+}
+
+.contact-details {
+  padding: 10px;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+#contactForm
+input[type="text"],
+input[type="email"]{
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#contactForm textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+}
+
+#contactForm
+input:focus,
+textarea:focus {
+ border-color: #ffc5ad;
+ outline: none;
+}
+
+
+#contactForm button {
+  width: 95%;
+  padding: 10px;
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+#contactForm button:hover {
+ background: #c70039;
+}
+
+
+
+
+/* About Us Page Styling */
+#aboutUs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+
+#aboutUs-container h1{
+  font-family: "Chelsea Market";
+  color: #f1ecec;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+
+.about-content {
+ background: #f8f8f8;
+ padding: 10px;
+ margin: 10px;
+ width: 90%;
+ border-radius: 7px;
+ box-shadow: 4px 6px 12px #00000060;
+ color: black;
+}
+
+.about-content label {
+ font-size: 20px;
+ color: #ff6b6b;
+ text-align: center;
+ margin-bottom: 15px;
+}
+
+
+.about-content p {
+ font-size: 15px;
+ line-height: 1.6;
+ color: #333;
+ margin: 10px;
+}
+
+.about-content ul {
+ list-style: none;
+ padding: 0;
+}
+
+.about-content ul li {
+ font-size: 15px;
+ background-color: #ffdd57;
+ width: 40%;
+ position:relative;
+ left: 390px;
+ padding: 10px;
+ margin: 10px 0;
+ border-radius: 5px;
+ color: #333;
+}
+
+
+
+/* Footer Styling */
+footer{
+background-color: #034d6d98;
+padding: 10px;
+margin: 100px 0 auto;
+}
+
+footer h2 {
+  color: #ffdd57;
+ }
+
+
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+ .event {
+     width: 80%;
+ }
+
+ h2 {
+     width: 80%;
+ }
+ .about-content {
+     width: 80%;
+ }
+ 
+ .contact-container {
+ flex-direction: column;
+ align-items: center;
+ }
+ .contact-form,
+ .contact-info {
+     width: 80%;
+ }
+ 
+ .celebrity {
+     width: 80%;
+ }
+ 
+ h2 {
+     width: 80%;
+ }
+ 
+ .event {
+     width: 80%;
+ }
+ 
+ h2 {
+     width: 80%;
+ }
+ 
+ form {
+     width: 80%;
+ }
+}
